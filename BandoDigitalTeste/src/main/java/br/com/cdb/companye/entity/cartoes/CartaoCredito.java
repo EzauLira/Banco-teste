@@ -6,12 +6,31 @@ import br.com.cdb.companye.entity.CartaoBase;
 
 public class CartaoCredito extends CartaoBase {
 	
+	private double limite;
+	private double limite2;
+	private double limite3;
+	
 	Random random = new Random();
 
-	public CartaoCredito(String nome, String numero, int cvv, int validade, boolean ativoDesativo) {
+	public CartaoCredito(String nome, String numero, int cvv, int validade, boolean ativoDesativo, double limite, double limite2, double limite3) {
 		super(nome, numero, cvv, validade, ativoDesativo);
+		this.limite = 1500;
+		this.limite2 = 3000;
+		this.limite3 = 5000;
 	}
-
+	
+	public double getLimite() {
+		return limite;
+	}
+	
+	public double getLimite2() {
+		return limite2;
+	}
+	
+	public double getLimite3() {
+		return limite3;
+	}
+	
 	@Override
 	public String getNumero() {
 		int[] numeros = new int[4];

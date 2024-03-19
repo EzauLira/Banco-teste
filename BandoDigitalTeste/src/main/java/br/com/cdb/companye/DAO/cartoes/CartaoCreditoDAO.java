@@ -7,14 +7,28 @@ import br.com.cdb.companye.entity.cartoes.CartaoCredito;
 
 
 public class CartaoCreditoDAO implements ICartaoCreditoDAO {
-	ArrayList<CartaoCredito> cartaoDebito = new ArrayList<>();
+	ArrayList<CartaoCredito> cartaoCredito = new ArrayList<>();
 
 	public void gerarNumero(CartaoCredito numero) {
-		cartaoDebito.add(numero);
+		cartaoCredito.add(numero);
 	}
 	
 	public void gerarCvv(CartaoCredito cvv) {
-		cartaoDebito.add(cvv);	
+		cartaoCredito.add(cvv);	
 	}
+	
+	public void gerarLimite(CartaoCredito limite) {
+		cartaoCredito.add(limite);
+	}
+	
+	public void gerarLimite2(CartaoCredito limite2) {
+		cartaoCredito.add(limite2);
+	}
+	
+	public void gerarLimite3(CartaoCredito limite3) {
+		cartaoCredito.add(limite3);
+	}
+	
+	
 
 }

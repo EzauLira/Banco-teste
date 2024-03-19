@@ -2,6 +2,7 @@ package br.com.cdb.companye.utils;
 
 import java.util.Scanner;
 
+import br.com.cdb.companye.service.cartoes.CartaoCreditoService;
 import br.com.cdb.companye.service.clientes.ClienteService;
 
 public class MenuCP {
@@ -10,6 +11,8 @@ public class MenuCP {
 	public static void ContaCP() {
 
 		ClienteService clienteService = new ClienteService();
+		CartaoCreditoService conta = new CartaoCreditoService();
+		
 
 		Scanner input = new Scanner(System.in);
 		String conf;
@@ -38,11 +41,11 @@ public class MenuCP {
 			double renda = input.nextDouble();
 			input.nextLine();
 			if(renda <= 1500) {
-				getInfo();
+				
 			}else if(renda >= 1500 && renda <= 3000) {
-				getInfo();
+				
 			}else {
-				getInfo();
+				
 			}
 
 			System.out.println("Digite se email:");

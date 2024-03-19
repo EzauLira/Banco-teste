@@ -6,6 +6,7 @@ public interface ICartaoCreditoDAO {
 	
 	public void gerarNumero(CartaoCredito numero);
 	public void gerarCvv(CartaoCredito cvv);
+	public void gerarLimite(CartaoCredito limite);
 	
 
 }
